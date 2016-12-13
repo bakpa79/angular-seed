@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Config } from './shared/index';
 import './operators';
 
@@ -9,6 +9,8 @@ import './operators';
   moduleId: module.id,
   selector: 'sd-app',
   templateUrl: 'app.component.html',
+  styleUrls: ['app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   constructor() {
